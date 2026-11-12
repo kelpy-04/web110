@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  background-color: #3d0088;
+ /* Add a background color
+  Add a margin of 20px*/
+}
+/* CENTER FORM */
+.container {
+ max-width: 700p;
+ background-color: rgb(96, 133, 112);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 auto;  
+  display: grid;  
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+header {
+  text-align: center;
+  padding-bottom: 15px;
+ /*Add a bottom border*/
+  margin-bottom: 20px;
+}
+header img {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+}
+h2{
+  /*Add 0px to the top margin
+  Add font color*/
+  margin-top: 0px;
+  font-weight: bold;
+  font-size:2em;
+  color: #BA2D11;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color:#21456d;
+}
+  /* Mobile Grid */
+/* INPUTS */
+input,select {
+  padding: 10px;
+  border: 2px solid #ccc;
+  /* Add a border-radius */
+  border-radius: 15%;
+  margin-bottom:30px;
+}
+input[type="radio"] {
+  margin: 0;
+}
+/* RADIO GROUP */
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+/* SUBMIT BUTTON */
+button {
+    background-color: rgb(95, 180, 255);
+    color: rgb(252, 249, 249);
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    width:300px;
+}
+footer {
+   text-align:center;
+   margin-top: 20px;
+   padding-top: 15px;
+}
+/* Valid/ Invalid */
+/* VALID INPUTS */
+input:user-valid,
+select:user-valid {
+/*Add a light green background color
+Add a green border*/
+background-color: lightgreen;
+border-color: green;
+}
+/* INVALID INPUTS */
+input:user-invalid,
+select:user-invalid {
+/*Add a light red background color
+Add a red border
+  Add a rule of your choice */
+  background-color: lightcoral;
+  border-color: #750000;
+  border-style: dotted;
+}
+
+input[type=text]:focus,
+input[type=date]:focus,
+select:focus {
+background-color:antiquewhite;
+color: rgb(0, 0, 0);
+}
